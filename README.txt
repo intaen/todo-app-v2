@@ -1,0 +1,3 @@
+-npx create-expo-app@latest --template (expo CLI)
+-Choose a template: » Blank
+-What is your app named? ... {your project name}
