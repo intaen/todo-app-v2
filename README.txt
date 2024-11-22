@@ -12,4 +12,18 @@ Build APK:
 -npm install -g eas-cli
 -eas login
 -eas build:configure
--eas build --platform android (automatically upload to Google Play Store)
+-eas build --platform android (automatically upload to Google Play Store .aab)
+-to create .apk, add this:
+"preview": {
+      "distribution": "internal",
+      "android": {
+        "buildType": "apk"
+      }
+    },
+    "preview2": {
+      "android": {
+        "gradleCommand": ":app:assembleRelease"
+      }
+    },
+ then do this command:
+ eas build -p android --profile previe
